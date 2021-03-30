@@ -194,27 +194,39 @@ class ViewController: UIViewController {
     }
     
     @objc func clickPlus(view:UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String(numberOne + numberTwo)
     }
     
     @objc func clickMinus(view:UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String(numberOne - numberTwo)
     }
 
     @objc func clickDelete(view:UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String(numberOne / numberTwo)
     }
     
     @objc func clickUmnojenie(view: UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String(numberOne * numberTwo)
     }
     
     @objc func clickPercent(view:UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String((numberOne / 100) /  numberTwo)
     }
     
     @objc func clickSinus(view:UIButton){
-        
+        let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
+        let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
+        resultLabel.text = String((numberOne * Double.pi) /  numberTwo)
     }
     
     @objc func clickCosinus(view:UIButton){

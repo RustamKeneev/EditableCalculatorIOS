@@ -226,7 +226,8 @@ class ViewController: UIViewController {
     @objc func clickSinus(view:UIButton){
         let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
         let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
-        resultLabel.text = String((numberOne * Double.pi) /  numberTwo)
+//        resultLabel.text = String(numberOne * Double.pi /  numberTwo)
+//        resultLabel.text = String(sinus(numberOne * Double.pi / numberTwo))
     }
     
     @objc func clickCosinus(view:UIButton){
@@ -238,7 +239,7 @@ class ViewController: UIViewController {
     @objc func clickRootSquared (view: UIButton){
         let numberOne: Double = Double(fieldOne.text ?? "0") ?? 0
         let numberTwo: Double = Double(fieldTwo.text ?? "0") ?? 0
-        resultLabel.text = String(numberOne.squareRoot())
+        resultLabel.text = String((numberOne + numberTwo).squareRoot())
     }
     
     @objc func clickTangels(view: UIButton){
